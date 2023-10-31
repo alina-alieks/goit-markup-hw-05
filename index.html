@@ -47,10 +47,37 @@
     <!--Content main-->
     <main>
       <!--Section Hero-->
-      <section class="section-hero">
+      <section class="section-hero section-hero-contact">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="button-hero" type="button">Order Service</button>
+        </div>
+
+        <div>
+          <form class="form-hero-contact">
+            <p class="form-contact-name">Leave your contacts and we will call you back</p>
+            <div class="input-wrapper">
+              <label class="label-form" for="name">Name</label>
+              <input class="input-text" type="text" name="name" id="name" />
+              <label class="label-form" for="phone">Phone</label>
+              <input class="input-text" type="tel" name="tel" id="phone" />
+              <label class="label-form" for="email">Email</label>
+              <input class="input-text" type="email" name="email" id="email" />
+              <label class="label-form">Comment</label>
+              <textarea
+                class="input-textarea"
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <label class="label-form">
+              <input class="input-check" type="checkbox" />I accept the terms and conditions of the
+              <a class="privacy-policy" href="#">Privacy Policy</a></label
+            >
+
+            <button class="form-button-send" type="submit">Send</button>
+          </form>
         </div>
       </section>
 

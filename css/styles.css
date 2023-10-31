@@ -31,7 +31,7 @@ img {
     margin-right: auto;
 }
 
-/* Header */ 
+/* ============ Header ============ */ 
 header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -109,7 +109,7 @@ header {
 .address-link:focus {
     color: #404bbf;
 }
-/* Section Hero */
+/* ==========Section Hero============ */
 .main-title {
     color: #ffffff;
     text-align: center;
@@ -140,6 +140,7 @@ header {
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
+    font-family: inherit;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
@@ -155,7 +156,123 @@ header {
 .button-hero:focus {
     background-color: #404bbf;
 }
-/* Section general */
+
+/* Contact form */
+input, textarea {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+.section-hero-contact {
+    position: relative;
+    /* overflow: hidden;    */
+}
+.form-hero-contact {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    padding: 24px;
+}
+
+.form-contact-name {
+    margin-bottom: 16px;
+    text-align: center;
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.label-form {
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.input-text, .input-textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: #fcfcfc;
+}
+.input-text {
+    height: 40px;
+    margin-bottom: 8px;
+}
+.input-textarea {
+    resize: none;
+    height: 120px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.input-textarea::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+}
+
+.input-check {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+}
+
+.privacy-policy {
+    color: #4d5ae5;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration: underline;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy-policy:hover,
+.privacy-policy:focus {
+    color: #404bbf;
+}
+
+.form-button-send {
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #4d5ae5;
+    color: #ffffff;
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    margin: 24px auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.form-button-send:hover,
+.form-button-send:focus {
+    background-color: #404bbf;
+}
+
+
+/* ============= Section general ============ */
 .section {
     padding: 120px 0;
 }
@@ -169,7 +286,7 @@ header {
     text-transform: capitalize;
 }
 
-/* Section Benefits */
+/* ============= Section Benefits ===========*/
 
 .container .benefits-list {
     display: flex;
