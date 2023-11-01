@@ -177,16 +177,26 @@ input, textarea {
     background-color: #fcfcfc;
     padding: 24px;
 }
+
+.icon-close-wrapper {
+    position: relative;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
 .icon-close-box {
+    position: absolute;
+    right: 0;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background-color: #e7e9fc;
     border-radius: 50%;
-    margin-bottom: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-close-box:hover,
@@ -203,8 +213,10 @@ input, textarea {
     fill: #ffffff;
 }
 .form-contact-name {
+    display: block;
     margin-bottom: 16px;
     text-align: center;
+    
 }
 .input-wrapper {
     display: flex;
@@ -217,7 +229,20 @@ input, textarea {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-bottom: 4px;
+    display: block;
+}
+.input-text-wrapper {
+    position: relative;
+    height: 40px;
+    margin-bottom: 8px;
+    width: 360px;
+    margin-top: 4px;
+
+}
+.icon-form {
+    position: absolute;
+    left: 16px;
+    top: 11px;
 }
 
 .input-text, .input-textarea {
@@ -228,13 +253,18 @@ input, textarea {
 }
 .input-text {
     height: 40px;
-    margin-bottom: 8px;
+    padding: 11px 0 11px 38px;
+}    
+.icon-form {
+    fill: #2e2f42;
 }
+
 .input-textarea {
     resize: none;
     height: 120px;
     padding-left: 16px;
     padding-top: 8px;
+    margin-top: 4px;
 }
 
 .input-textarea::placeholder {
@@ -244,7 +274,17 @@ input, textarea {
     letter-spacing: 0.04em;
 
 }
+.input-text:focus {
+    border-color: #4d5ae5;
+}
+.input-text:focus .icon-form {
+    fill: #4d5ae5;
+}
 
+
+.link-checkbox {
+    margin-bottom: 24px;
+}
 .input-check {
     margin-right: 8px;
     width: 16px;
@@ -287,7 +327,6 @@ input, textarea {
     height: 56px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
