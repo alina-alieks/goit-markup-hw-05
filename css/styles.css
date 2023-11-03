@@ -629,7 +629,7 @@ margin-left: 16px;
 .input-textarea:focus {
     border-color: #4d5ae5;
     outline: transparent;
-    outline-offset: 4px;
+     
 }
 
 .input-text:focus + .icon-form {
